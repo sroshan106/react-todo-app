@@ -1,6 +1,6 @@
 import React from 'react'
 import OneTodo from './OneTodo';
-
+import './App.css';
 
 export default function View(props) {
     function removeTodo(index) {
@@ -9,7 +9,8 @@ export default function View(props) {
         props.setMyTodos(newTodos);
     }
     return (
-        <div>{
+        <div className='wrapping-containter-todo'>{
+            
             props.myTodos.map(function( todoName, index ){
                 return <OneTodo key={index} index={index} todo={todoName.todo} removeTodo={removeTodo}/>
             })

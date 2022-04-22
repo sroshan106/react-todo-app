@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+
+input{
+  margin: 0 60px;
+}
+
+.wrapping-containter-todo{
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: left;
+}
+.todo-individual-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin:1%;
+  border-radius: 1%;
+  font-size: x-large;
+  background: #d1e0e0;
+}
+.removeButton {
+    
+
+    padding: 8px 10px;
+    margin: 8px 0;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+.removeButton:hover {
+  background-color: white;
+  color: #555555;
+}
+
+input[type=text] {
+  font-size: 16px;
+  width: 40%;
+  padding: 15px 32px;
+  margin: 8px 0;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+.addTodoButton{
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.addTodoButton:hover{
+  background-color: black;
+}

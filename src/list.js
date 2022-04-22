@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import './App.css';
 
 export default function AddTodo(props) {
 
@@ -20,8 +20,8 @@ export default function AddTodo(props) {
 
     return (
         <div>
-            <input type={'text'} width={300} value={todo} onChange={updateTodoInformation}/>
-            <button onClick={addTodo}>Add Todo </button>
+            <input type={'text'} width={300} value={todo} onChange={updateTodoInformation} />
+            <button onClick={addTodo} className="addTodoButton">Add Todo </button>
         </div>
     )
 }
